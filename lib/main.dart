@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shared_ap/Preferences/preferences.dart'; // Ensure this path matches your project structure
+import 'package:shared_ap/Preferences/preferences.dart'; 
 import 'package:shared_ap/screen/myhomepage.dart';
 
-
+//Async para que se ejecute antes de que se inicie la app
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Preferences.init(); 
@@ -19,9 +19,7 @@ class MyApp extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // Define the default brightness and colors.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        // Use Material 3 features
         useMaterial3: true,
         
       ),
